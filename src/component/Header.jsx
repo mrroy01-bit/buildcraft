@@ -30,7 +30,9 @@ const Header = () => {
         {/* Main header */}
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-            <div className="text-2xl font-bold text-orange-600">BuildCraft</div>
+            <a href="/">
+              <div className="text-2xl font-bold text-orange-600">BuildCraft</div>
+            </a>
             <div className="ml-2 text-sm text-gray-600 hidden sm:block">Construction & Design</div>
           </div>
 
@@ -39,6 +41,7 @@ const Header = () => {
             <a href="#home" className="text-gray-700 hover:text-orange-600 transition-colors">Home</a>
             <a href="#services" className="text-gray-700 hover:text-orange-600 transition-colors">Services</a>
             <a href="#about" className="text-gray-700 hover:text-orange-600 transition-colors">About</a>
+            <a href="#portfolio" className="text-gray-700 hover:text-orange-600 transition-colors">Portfolio</a>
             <a href="#contact" className="text-gray-700 hover:text-orange-600 transition-colors">Contact</a>
           </nav>
 
@@ -58,6 +61,7 @@ const Header = () => {
               <a href="#home" className="py-2 px-4 text-gray-700 hover:bg-orange-50 rounded-md transition-colors">Home</a>
               <a href="#services" className="py-2 px-4 text-gray-700 hover:bg-orange-50 rounded-md transition-colors">Services</a>
               <a href="#about" className="py-2 px-4 text-gray-700 hover:bg-orange-50 rounded-md transition-colors">About</a>
+              <a href="#portfolio" className="py-2 px-4 text-gray-700 hover:bg-orange-50 rounded-md transition-colors">Portfolio</a>
               <a href="#contact" className="py-2 px-4 text-gray-700 hover:bg-orange-50 rounded-md transition-colors">Contact</a>
             </div>
           </nav>

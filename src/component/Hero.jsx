@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ArrowRight, CheckCircle, Award, Home, MapPin } from 'lucide-react';
+import ContactFormPopup from './ContactFormPopup';
 
 const Hero = () => {
+  const [isContactFormOpen, setIsContactFormOpen] = useState(false);
+
+  const openContactForm = () => {
+    setIsContactFormOpen(true);
+  };
+
+  const closeContactForm = () => {
+    setIsContactFormOpen(false);
+  };
+  
   return (
     <section id="home" className="relative overflow-hidden">
       {/* Background with overlay */}
@@ -53,16 +64,19 @@ const Hero = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <button className="group bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-orange-500/30">
+              <button 
+                onClick={openContactForm}
+                className="group bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-orange-500/30"
+              >
                 <span className="flex items-center justify-center">
                   Get Free Quote
                   <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
                 </span>
               </button>
-              <button className="relative overflow-hidden border-2 border-white hover:border-orange-400 px-8 py-4 rounded-lg font-semibold transition-all duration-300 group">
+              <a href="/portfolio" className="relative overflow-hidden border-2 border-white hover:border-orange-400 px-8 py-4 rounded-lg font-semibold transition-all duration-300 group inline-flex items-center justify-center">
                 <span className="relative z-10 group-hover:text-gray-900 transition-colors">View Our Work</span>
                 <div className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
-              </button>
+              </a>
             </div>
           </div>
           
@@ -106,6 +120,9 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      
+      {/* Contact Form Popup */}
+      <ContactFormPopup isOpen={isContactFormOpen} onClose={closeContactForm} />
     </section>
   );
 };

@@ -1,22 +1,18 @@
 import './App.css';
-import Header from './component/Header';
-import Hero from './component/Hero';
-import Services from './component/Services';
-import About from './component/About';
-import ContactForm from './component/ContactForm';
-import Footer from './component/Footer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import PortfolioPage from './component/ViewWork';
+
 function App() {
   return (
-  <>
-  <div className="min-h-screen">
-      <Header />
-      <Hero />
-      <Services />
-      <About />
-      <ContactForm />
-      <Footer />
-    </div>
-  </>
+    <Router>
+      <div className="min-h-screen flex flex-col">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/portfolio" element={<PortfolioPage />} />
+          </Routes>
+      </div>
+    </Router>
   );
 }
 
