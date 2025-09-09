@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, ZoomIn } from 'lucide-react';
-import Header from './Header';
-const ViewWork = () => {
+import Header from '../component/Header';
+const Portfolio = () => {
   const [activeTab, setActiveTab] = useState('all');
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -99,7 +99,8 @@ const ViewWork = () => {
 
   return (
     <>
-    <section id="portfolio" className="py-24 bg-gradient-to-b from-gray-900 to-black relative overflow-hidden">
+    <Header />
+    <section className="py-24 bg-gradient-to-b from-gray-900 to-black relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-gray-800 to-transparent opacity-30"></div>
       <div className="absolute top-40 right-10 w-64 h-64 bg-orange-500 rounded-full filter blur-3xl opacity-10 animate-pulse"></div>
@@ -232,4 +233,4 @@ const ViewWork = () => {
   );
 };
 
-export default ViewWork;
+export default Portfolio;

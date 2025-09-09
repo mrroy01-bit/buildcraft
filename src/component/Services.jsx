@@ -20,45 +20,87 @@ const Services = () => {
         'High-quality furniture & decor sourcing'
       ],
       timeline: '4-6 weeks',
-      rating: 4.9
+      rating: 4.9,
+      URL: '/interior-design'
     },
     {
-      title: 'Modular Kitchen',
+      title: 'DESIGN CONSULTATION',
       tagline: 'Functional Elegance',
       icon: ChefHat,
-      description: 'Custom modular kitchens designed for modern living with premium materials and smart storage solutions.',
+      description: 'Expert design consultation services to help you create the perfect space.',
       locations: ['Noida', 'Lucknow', 'Varanasi'],
       color: 'from-teal-500 to-teal-600',
       hoverColor: 'from-teal-600 to-teal-700',
       lightColor: 'teal-100',
       textColor: 'teal-600',
       features: [
-        'Ergonomic design for optimal workflow',
-        'Premium quality materials & hardware',
-        'Expert installation & finishing',
-        'Comprehensive 5-year warranty'
+        'Personalized design advice & recommendations',
+        'Space optimization & layout planning',
+        'Material & finish selection guidance',
+        'Budget-friendly design solutions'
       ],
       timeline: '3-5 weeks',
-      rating: 4.8
+      rating: 4.8,
+      URL: '/design-consultation'
     },
     {
-      title: 'Architectural Services',
-      tagline: 'Design the Future',
+      title: 'SPACE REFURBISHING',
+      tagline: 'Revitalize Your Environment',
       icon: Building2,
-      description: 'Professional architectural services from concept to completion for residential and commercial projects.',
+      description: 'Comprehensive space refurbishing services to breathe new life into your property.',
       locations: ['Noida', 'Lucknow', 'Varanasi'],
       color: 'from-indigo-500 to-indigo-600',
       hoverColor: 'from-indigo-600 to-indigo-700',
       lightColor: 'indigo-100',
       textColor: 'indigo-600',
       features: [
-        'Innovative structural design & planning',
-        'Construction documentation & permitting',
-        'Project management & oversight',
-        'Sustainable & eco-friendly solutions'
+        'Complete renovation & remodeling services',
+        'Structural repairs & upgrades',
+        'Modern design & aesthetic improvements',
+        'End-to-end project management'
       ],
       timeline: '8-12 weeks',
-      rating: 4.9
+      rating: 4.9,
+      URL: '/space-refurbishing'
+    },
+    {
+      title: 'TURNKEY SOLUTIONS',
+      tagline: 'Hassle-Free Project Delivery',
+      icon: Building2,
+      description: 'Comprehensive turnkey solutions for seamless project execution from start to finish.',
+      locations: ['Noida', 'Lucknow', 'Varanasi'],
+      color: 'from-green-500 to-green-600',
+      hoverColor: 'from-green-600 to-green-700',
+      lightColor: 'green-100',
+      textColor: 'green-600',
+      features: [
+        'Single point of contact for all project phases',
+        'Integrated design & construction services',
+        'Timely delivery & budget management',
+        'Post-occupancy support & maintenance'
+      ],
+      timeline: '12-16 weeks',
+      rating: 4.8,
+      URL: '/turnkey-space'
+    },
+    {
+      title: 'CONSTRUCTION SERVICES',
+      tagline: 'Building Your Vision',
+      icon: Building2,
+      description: 'Professional construction services to bring your architectural designs to life.',
+      locations: ['Noida', 'Lucknow', 'Varanasi'],
+      color: 'from-blue-500 to-blue-600',
+      hoverColor: 'from-blue-600 to-blue-700',
+      lightColor: 'blue-100',
+      textColor: 'blue-600',
+      features: [
+        'Experienced project management team',
+        'Quality craftsmanship & materials',
+        'Adherence to timelines & budgets',
+      ],
+      timeline: '8-12 weeks',
+      rating: 4.7,
+      URL: '/construction-service'
     }
   ];
 
@@ -183,8 +225,8 @@ const Services = () => {
                     </ul>
                   </div>
 
-                  <button className={`w-full bg-gradient-to-r ${service.color} hover:${service.hoverColor} text-white py-4 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center group shadow-lg transform hover:scale-[1.02]`}>
-                    Get Free Quote
+                  <button onClick={() => window.location.href = service.URL} className={`w-full bg-gradient-to-r ${service.color} hover:${service.hoverColor} text-white py-4 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center group shadow-lg transform hover:scale-[1.02]`}>
+                    Read More
                     <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
                   </button>
                 </div>
