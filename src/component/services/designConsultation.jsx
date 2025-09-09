@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Lightbulb, MessageSquare, PenTool, Users, CheckCircle, Compass, Palette, Eye } from 'lucide-react';
 import Header from '../Header';
 
