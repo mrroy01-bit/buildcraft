@@ -7,7 +7,7 @@ const ContactFormPopup = ({ isOpen, onClose }) => {
     email: '',
     phone: '',
     service: '',
-    location: 'noida',
+    location: '',
     message: ''
   });
 
@@ -175,9 +175,9 @@ const ContactFormPopup = ({ isOpen, onClose }) => {
                   >
                     <option value="">Select a service</option>
                     <option value="interior-design">Interior Design</option>
-                    <option value="modular-kitchen">Modular Kitchen</option>
-                    <option value="architecture">Architecture</option>
-                    <option value="complete-construction">Complete Construction</option>
+                    <option value="modular-kitchen">Design Consultation</option>
+                    <option value="architecture">Space Refurbishing</option>
+                    <option value="complete-construction">Turnkey Solutions</option>
                   </select>
                 </div>
               </div>

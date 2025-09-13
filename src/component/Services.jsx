@@ -24,7 +24,7 @@ const Services = () => {
       URL: '/interior-design'
     },
     {
-      title: 'DESIGN CONSULTATION',
+      title: 'Design Consultation',
       tagline: 'Functional Elegance',
       icon: ChefHat,
       description: 'Expert design consultation services to help you create the perfect space.',
@@ -44,7 +44,7 @@ const Services = () => {
       URL: '/design-consultation'
     },
     {
-      title: 'SPACE REFURBISHING',
+      title: 'Space Refurbishing',
       tagline: 'Revitalize Your Environment',
       icon: Building2,
       description: 'Comprehensive space refurbishing services to breathe new life into your property.',
@@ -64,7 +64,7 @@ const Services = () => {
       URL: '/space-refurbishing'
     },
     {
-      title: 'TURNKEY SOLUTIONS',
+      title: 'Turnkey Solutions',
       tagline: 'Hassle-Free Project Delivery',
       icon: Building2,
       description: 'Comprehensive turnkey solutions for seamless project execution from start to finish.',
@@ -84,7 +84,7 @@ const Services = () => {
       URL: '/turnkey-space'
     },
     {
-      title: 'CONSTRUCTION SERVICES',
+      title: 'Construction Services',
       tagline: 'Building Your Vision',
       icon: Building2,
       description: 'Professional construction services to bring your architectural designs to life.',
